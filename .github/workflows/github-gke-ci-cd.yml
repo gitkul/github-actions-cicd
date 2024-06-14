@@ -22,7 +22,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    # Setup gcloud CLI
     - name: Set up GKE credentials
       uses: GoogleCloudPlatform/github-actions/setup-gcloud@0.1.3
       env:
