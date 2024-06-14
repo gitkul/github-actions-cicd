@@ -43,6 +43,10 @@ jobs:
       run: |-
         docker build --tag "gcr.io/$PROJECT_ID/$IMAGE:$TAG" .
 
+    - name: Docker setup
+      run: |-
+        gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://$GKE_ZONE-docker.pkg.dev
+
     - name: Publish
       run: |-
         docker push "gcr.io/$PROJECT_ID/$IMAGE:$TAG"
