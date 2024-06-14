@@ -37,7 +37,7 @@ jobs:
 
     - name: Set up GKE credentials
       run: |-
-        gloud container clusters get-credentials $GKE_CLUSTER --zone $GKE_ZONE --project $PROJECT_ID
+        gcloud container clusters get-credentials $GKE_CLUSTER --zone $GKE_ZONE --project $PROJECT_ID
 
     - name: Build
       run: |-
