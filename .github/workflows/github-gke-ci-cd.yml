@@ -26,8 +26,8 @@ jobs:
     - name: Set up GKE credentials
       uses: GoogleCloudPlatform/github-actions/setup-gcloud@0.1.3
       with:
-        service_account_key: ${{ secrects.GKE_SA_KEY }}
-        project_id: ${{ secrects.GKE_PROJECT }}
+        service_account_key: ${{ secrets.GKE_SA_KEY }}
+        project_id: ${{ secrets.GKE_PROJECT }}
 
     - name: Docker configuration
       run: |-
