@@ -9,7 +9,7 @@ env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GKE_CLUSTER:  github-gke-cicd    
   GKE_ZONE: us-central1-c 
-  DEPLOYMENT_NAME: nginx-cicd
+  DEPLOYMENT_NAME: nginx-html-app  
   IMAGE: micro 
   TAG: 1.0.0
 
